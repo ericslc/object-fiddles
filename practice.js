@@ -122,10 +122,9 @@ console.log(backPack);
 //Now, loop through your album object alerting every song title individually.
 
   //Code Here
-for (var p in album){
-  alert(object.keys(p));
-
-}
+  for (var eachItem in album){
+alert(eachItem);
+};
 
 
 
@@ -149,7 +148,7 @@ var states = {
   //Code Here
 for (var p in states){
   if(p > '30000'){
-    console.log(states[p]);
+    alert(states[p]);
   }
 
 }
@@ -173,7 +172,11 @@ var user1 = {
 that each value is truthy. If it's not truthy, remove it from the object. */
 
   //Code Here
-
+for (var p in user1){
+  if(p != true){
+    remove.p;
+  }
+}
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
   //Code Here
@@ -247,10 +250,13 @@ methodCollection.alertHello();
 // Create a function called MakePerson which takes in name, birthday, ssn as its parameters and returns a new object with all of the information that you passed in.
 
   //Code Here
-var MakePerson = {
-
-}
-
+  function makePerson(name, birthday, ssn){
+    this.name = name;
+    this.birthday = birthday;
+    this.ssn = ssn;
+  }
+  var person = new makePerson('Dave', '3/21/86', '55555');
+  console.log(person);
 
 //NEXT PROBLEM
 
@@ -259,8 +265,12 @@ var MakePerson = {
 // Create a function called MakeCard which takes in all the data it needs to make a Credit Card object and returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
 
   //Code Here
-
-
+function MakeCard(ssn, card, color){
+  this.cardnumber = cardnumber;
+  this.card = card;
+  this.color = color;
+}
+var card = new MakeCard('152535456', 'amex', 'platinum')
 
 //NEXT PROBLEM
 
@@ -272,3 +282,6 @@ var MakePerson = {
 */
 
   //Code Here
+  function bindCard(person, card){
+
+  }
